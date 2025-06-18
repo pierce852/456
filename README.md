@@ -30,4 +30,8 @@ Selenium 是一個用於自動化網頁操作的 Python 庫，可通過 pip 安�
 安裝步驟：
 打開終端機（Terminal）或命令提示字元（Command Prompt）。
 輸入以下指令以安裝 Selenium：
+<<<<<<< HEAD
  pip install selenium
+=======
+ pip install selenium
+>>>>>>> 76bcbf8afff5cbe1b335316ef1013c6a2ef06c6c
