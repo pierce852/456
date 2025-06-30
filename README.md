@@ -1,41 +1,50 @@
 Cityline/UrbTix Ticket Bot
-A Python-based Selenium bot for automating ticket purchases on Cityline and UrbTix platforms, configurable via settings.json. Warning: Automated ticketing may violate platform terms; use responsibly and comply with local laws.
+A Python-based Selenium automation tool for ticket purchasing on Cityline and UrbTix platforms.
+
+This bot automates login and captcha detection (with manual intervention) for ticket purchasing on Cityline and UrbTix. It uses a configurable settings.json file to manage user credentials, event URLs, and ticket preferences.
+
+⚠️ Warning: Automated ticketing may violate platform terms of service. Use responsibly and ensure compliance with local laws.
 
 Features
-Command-line interface to select Cityline or UrbTix.
-Automates login and detects captchas (requires manual completion).
-Partially supports ticket type and quantity selection.
+Platform Selection: Choose between Cityline or UrbTix via CLI.
+Login Automation: Automates login for both platforms.
+Captcha Handling: Detects captchas and prompts for manual input.
+Configurable Settings: Customize credentials, event URLs, and ticket preferences.
 Prerequisites
 Python 3.8+
-Google Chrome
-ChromeDriver (auto-managed by Selenium)
-Required packages:
+Google Chrome browser
+ChromeDriver (managed automatically by Selenium)
+Required Python packages:
 pip install selenium undetected-chromedriver python-decouple
 
 Usage
-Run the script:
+Run the Script:
 python main.py
-Choose platform: 1 for Cityline, 2 for UrbTix.
-Manually complete captchas when prompted.
-Extend scripts for full ticket selection and checkout as needed.
-
+Select Platform: Enter 1 for Cityline or 2 for UrbTix.
+Complete Captchas: Follow prompts to manually resolve captchas.
+Note: The bot currently automates login only; ticket selection and checkout require manual steps or further development.
 Project Structure
-main.py: Selects and runs Cityline or UrbTix bot.
-cityline_bot.py: Cityline automation script.
-urbtix_bot.py: UrbTix automation with undetected_chromedriver.
-settings.json: Configuration for credentials and event details.
+main.py: Entry point to select and run the bot.
+cityline_bot.py: Cityline-specific automation logic.
+urbtix_bot.py: UrbTix automation using undetected_chromedriver.
+settings.json: Configuration file for user settings.
+
 Known Issues
-Requires manual completion for puzzle slider captchas.
-Unable to reliably locate login elements via XPath for auto-login.
-Limited to login automation; ticket selection and checkout need implementation.
-Cityline’s standard Chrome driver may trigger bot detection.
+Puzzle Slider Captchas: Manual completion required; automation not yet implemented.
+XPath-Based Login: Unreliable element location for automated login.
+Partial Automation: Ticket selection and checkout are not fully automated.
+Bot Detection: Cityline may flag standard ChromeDriver usage.
+
 Future Improvements
-Automate puzzle slider captchas (e.g., via 2Captcha).
-Improve XPath reliability for login automation.
-Complete ticket selection and checkout logic.
+Automate puzzle slider captchas (e.g., integrate 2Captcha).
+Enhance login reliability with better element detection.
+Complete ticket selection and checkout automation.
 Add robust error handling and logging.
+
 Legal Notice
-Automated ticketing may violate Cityline/UrbTix terms of service, risking account bans. Use only for personal, non-commercial purposes and ensure compliance with local regulations.
+Automated ticket purchasing may breach Cityline or UrbTix terms of service, risking account suspension or legal action. Use this tool solely for personal purposes and comply with applicable laws.
 
 License
-MIT License
+Licensed under the MIT License.
+
+This version follows standard README conventions with clear headings, concise instructions, and proper Markdown formatting. Let me know if you'd like further refinements!
