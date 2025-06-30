@@ -20,14 +20,14 @@ This bot automates login and captcha detection (with manual intervention) for ti
   ```bash
   pip install selenium undetected-chromedriver python-decouple
 
-Usage
+**Usage**
 
 
 
 
 
 Run the Script:
-  python main.py
+  `python main.py`
 
 Select Platform: Enter 1 for Cityline or 2 for UrbTix.
 
@@ -39,7 +39,7 @@ Complete Captchas: Follow prompts to manually resolve captchas.
 
 Note: The bot currently automates login only; ticket selection and checkout require manual steps or further development.
 
-Project Structure
+**Project Structure**
 
 
 
@@ -59,7 +59,7 @@ urbtix_bot.py: UrbTix automation using undetected_chromedriver.
 
 settings.json: Configuration file for user settings.
 
-Known Issues
+**Known Issues**
 
 
 
@@ -79,8 +79,8 @@ Partial Automation: Ticket selection and checkout are not fully automated.
 
 Bot Detection: Cityline may flag standard ChromeDriver usage.
 
-Future Improvements
-
+**Future Improvements
+**
 
 
 
@@ -99,7 +99,7 @@ Complete ticket selection and checkout automation.
 
 Add robust error handling and logging.
 
-Legal Notice
+**Legal Notice**
 
 Automated ticket purchasing may breach Cityline or UrbTix terms of service, risking account suspension or legal action. Use this tool solely for personal purposes and comply with applicable laws.
 
